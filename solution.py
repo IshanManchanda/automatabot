@@ -49,7 +49,6 @@ def simulate(board, rules):
 			# the cell stays (or becomes) alive!
 			if (board[x][y] and neighbors in rules['survival']) \
 				or (not board[x][y] and neighbors in rules['birth']):
-
 				new_board[x][y] = 1
 	return new_board
 
